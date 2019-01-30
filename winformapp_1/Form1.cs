@@ -16,5 +16,12 @@ namespace winformapp_1
         {
             InitializeComponent();
         }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            String name = tbName.Text;
+            //MessageBox.Show("Hello World, "+ name +", is now available...");
+            lblAnswer.Text = $" Hello {name}. You are welcome here!";
+        }
     }
 }
